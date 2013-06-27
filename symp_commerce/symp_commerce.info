@@ -1,0 +1,57 @@
+name = Symposium Digital Commerce
+description = A <a href="http://futurefriend.ly/">future friendly</a> starter theme using front-end best practices based on <a href="https://drupal.org/project/mojo">Mojo</a>.
+core = 7.x
+
+; REGIONS
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer] = Footer
+
+; SCRIPTS
+scripts[] = js/script.js
+
+; STYLESHEETS
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/drupal.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/design.css
+
+; PANEL LAYOUTS
+plugins[panels][layouts] = panels/layouts
+
+; FEATURES
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; THEME SETTINGS
+settings[optimize_scripts] = 1
+settings[use_selectivizr] = 0
+settings[breadcrumb_display] = yes
+settings[breadcrumb_separator] = ' » '
+settings[breadcrumb_home] = 1
+settings[breadcrumb_title] = 0
+settings[breadcrumb_trailing] = 0
+settings[use_handheld_friendly] = 1
+settings[use_mobile_optimized] = 1
+settings[use_ios_meta] = 0
+settings[use_mobile_viewport] = 1
+settings[mobile_viewport_value] = 'width=device-width'
+settings[use_holmes] = 0
+settings[use_chrome_frame] = 0
+settings[warn_ie6] = 0
+settings[use_mobile_menu] = 0
+settings[use_dropdowns] = 0
+settings[rebuild_registry] = 0
+

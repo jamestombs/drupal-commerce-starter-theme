@@ -1,0 +1,26 @@
+/**
+ * @file
+ * RTL overrides for the typography style sheet.
+ */
+
+@media screen {
+  ul {
+    padding-left: 0;
+    padding-right: 1.2em;
+  }
+  ol,
+  dd,
+  blockquote {
+    padding-left: 0;
+    padding-right: 1.5em;
+  }
+  blockquote {
+    padding-left: 1.5em;
+    padding-right: 0;
+  }
+
+  .messages,
+  .password-suggestions {
+    padding: 9px 44px 9px 9px;
+  }
+}

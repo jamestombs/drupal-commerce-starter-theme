@@ -1,0 +1,22 @@
+#
+# Apache settings to improve front-end performance.
+# 2678400s = 31 days
+#
+# Rename this file to .htaccess to put it into effect.
+#
+
+# Expires Headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 seconds"
+  ExpiresByType image/gif "access plus 2678400 seconds"
+  ExpiresByType image/jpeg "access plus 2678400 seconds"
+  ExpiresByType image/png "access plus 2678400 seconds"
+</IfModule>
+
+# Cache Headers
+<IfModule mod_headers.c>
+  <FilesMatch "\.(gif|jpg|jpeg|png)$">
+    Header set Cache-Control "max-age=2678400, public"
+  </FilesMatch>
+</IfModule>
